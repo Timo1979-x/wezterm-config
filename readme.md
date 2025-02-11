@@ -6,6 +6,20 @@ Modified copy of Kevin's config included here for my reference in `_KevinSilvers
 ## Requirements
 - [IosevkaTerm Nerd Font Mono](https://www.nerdfonts.com/font-downloads) ([direct link](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/IosevkaTerm.zip))
 
+## Usage
+### Linux
+```bash
+git clone git@github.com:Timo1979-x/wezterm-config.git %USERPROFILE%\.config\wezterm
+```
+### Windows
+```
+git clone git@github.com:Timo1979-x/wezterm-config.git "%USERPROFILE%\.config\wezterm"
+```
+
+### getting help
+You can display current keyboard shortcuts with descriptios splitted by category. Press `F12` to open debug overlay, then call `_keys()` function.
+
+
 ## Improvements
 ### quake-style in Linux
 Needed script [tdrop](https://github.com/noctuid/tdrop).
@@ -24,12 +38,15 @@ tdrop -w 100% -h 100% wezterm
 ### quake-style in Windows
 You'll need [Autohotkey v2](https://www.autohotkey.com/v2/)
 
-Create file `wezterm.ahk` somewhere with [this content](./docs/ahk.md) and make it autostart with Windows, for example place shortcut in folder `???` with this command:
+Create file `wezterm.ahk` somewhere with [this content](./docs/ahk.md)
+
+Make it autostart with Windows. for example place shortcut in the "startup" folder with this command:
 ```
 "%LOCALAppData%\Microsoft\WindowsApps\AutoHotkey.exe" d:\utils\scripts\wezterm.ahk
 ```
+You can reach startup folder with `explorer shell:startup` command.
 
-AHK will show wezterm icon in windows system tray. There is small context menu associated with this icon.
+After start, AHK will show wezterm icon in windows system tray. There is small context menu associated with this icon.
 
 My default keybinding for emerging wezterm is "Ctrl + ~". You can change it in `wezterm.ahk` file.
 

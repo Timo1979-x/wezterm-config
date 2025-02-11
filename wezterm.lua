@@ -13,6 +13,9 @@ require('events.tab-title').setup({ hide_active_tab_unseen = false, unseen_icon 
 require('events.new-tab-button').setup()
 require('events.startup')
 
+require('utils.dump')
+require('utils.help')
+
 return Config:init()
    :append(require('config.appearance'))
    :append(require('config.bindings'))
