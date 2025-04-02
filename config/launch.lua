@@ -26,6 +26,10 @@ if platform.is_win then
          label = 'ssh raspberry pi 3',
          args = { "ssh.exe", "rpi3" },
       },
+      {
+         label = 'Cygwin zsh',
+         args = { "d:/cygwin64/bin/zsh.exe", "--login", "-i" },
+      },
    }
 elseif platform.is_mac then
    options.default_prog = { '/opt/homebrew/bin/fish', '-l' }
